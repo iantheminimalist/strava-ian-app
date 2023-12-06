@@ -1,5 +1,5 @@
 import {  useEffect, useState } from 'react'
-
+import logo from './assets/strava-badges/48.png'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 // import './App.css'
@@ -41,7 +41,7 @@ function App() {
         
         <div className='  '>
           <Link to="/" className='w-100 cursor-pointer flex items-center'>
-            <img className='mx-2' src="./src/assets/strava-badges/48.png" alt="strave-logo"  /> 
+            <img className='mx-2' src={logo} alt="strave-logo"  /> 
             <h1 className=' mx-2 text-slate-900 hover:text-gray-500'>My Strava Journey</h1>
           </Link>
         </div>
