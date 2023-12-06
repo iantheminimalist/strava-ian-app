@@ -42,20 +42,23 @@ function App() {
         <div className='  '>
           <Link to="/" className='w-100 cursor-pointer flex items-center'>
             <img className='mx-2' src={logo} alt="strave-logo"  /> 
-            <h1 className=' mx-2 text-slate-900 hover:text-gray-500'>My Strava Journey</h1>
+            <h1 className=' mx-2 text-slate-900 font-semibold hover:text-orange-700'>My Strava Journey</h1>
           </Link>
         </div>
 
         <div className=''>
-          <ul className={`md:flex md:justify-center md:items-center md:static md:auto md:z-auto absolute w-full bg-white left-0 z-[-1] transition-all duration-1000 ${open ? 'top-[65px]' : 'top-[-490px]' }`}>            
-            <li className='md:mr-10 mr-0 md:mb-0 p-3 '>
-              <Link className="hover:text-gray-500" to="/">Home</Link>
+          <ul className={`  md:flex md:justify-center md:items-center md:static md:auto md:z-auto 
+                            absolute w-full bg-white left-0 z-[-1] transition-all duration-500 
+                            ${open ? 'top-[73px]' : 'top-[-490px]' }
+                        `}>            
+            <li className='md:mr-5 my-3 md:mb-0 p-3 '>
+              <Link className="text-sky-950 font-semibold hover:text-orange-700 duration-400" to="/">Home</Link>
                   </li> 
-            <li className='md:mr-10 mr-0 md:mb-0 p-3' >
-              <Link className="hover:text-gray-500" to="pages/about">About</Link>
+            <li className='md:mr-5 my-3 md:mb-0 p-3' >
+              <Link className="text-sky-950 font-semibold hover:text-orange-700 duration-400" to="pages/about">About</Link>
             </li>
-            <li className='md:mr-10 mr-0 md:mb-0 p-3' >
-              <Link className="hover:text-gray-500" to="pages/activites">Activities</Link>
+            <li className='md:mr-5 my-3 md:mb-0 p-3' >
+              <Link className="text-sky-950 font-semibold hover:text-orange-700 duration-400" to="pages/activites">Activities</Link>
             </li>
           </ul>
         </div>
