@@ -37,12 +37,12 @@ function App() {
 
       <BrowserRouter>
       <header className=' w-full fixed top-0 left-0 z-2'>
-      <nav className=' shadow-md bg-white flex justify-between items-center p-2 border-b-2 border-gray-300 z-1'>
+      <nav className=' shadow-md bg-white flex justify-between items-center p-3 border-b-2 border-gray-300 z-1'>
         
         <div className='  '>
           <Link to="/" className='w-100 cursor-pointer flex items-center'>
-            <img className='' src="../src/assets/strava-badges/48.png " alt="strave-logo"  /> 
-            <h1 className=' text-slate-900 hover:text-gray-500'>My Strava Journey</h1>
+            <img className='mx-2' src="/../src/assets/strava-badges/48.png " alt="strave-logo"  /> 
+            <h1 className=' mx-2 text-slate-900 hover:text-gray-500'>My Strava Journey</h1>
           </Link>
         </div>
 
@@ -59,7 +59,7 @@ function App() {
             </li>
           </ul>
         </div>
-        <div className='menu-toggle cursor-pointer md:hidden ' onClick={ () => { openState(!open) } }>
+        <div className='menu-toggle cursor-pointer md:hidden mx-2' onClick={ () => { openState(!open) } }>
           <IonIcon icon={open ? close : menu} className={"w-6 h-6"} onClick={ () => { openState(!open) }} ></IonIcon>  
         </div>
       </nav> 
