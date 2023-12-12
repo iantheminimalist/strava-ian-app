@@ -1,8 +1,33 @@
+
 // lets me authorize my account to be veiwed.
 export function stravaPermission() {
   const authUrl = 'https://www.strava.com/oauth/authorize?client_id=' + import.meta.env.VITE_APP_STRAVA_CLIENT_ID + '&response_type=code&redirect_uri=' + 'http://localhost:5173' + '&scope=activity:read_all';
   window.location.href = authUrl;
+}
 
+const headers = {
+  'Accept': 'application/json , text/plain , */*',
+  'Content-Type': 'application/json',
+}
+
+  const body = JSON.stringify({
+  client_id: import.meta.env.VITE_APP_STRAVA_CLIENT_ID,
+  client_secret: import.meta.env.VITE_APP_STRAVA_SECRET,
+  refresh_token: import.meta.env.VITE_APP_STRAVA_REFRESH_TOKEN,
+  grant_type: 'refresh_token',
+})
+
+
+export async function stravaAuth() {
+  const reAuthResponse = await fetch('https://www.strava.com/oauth/token', {
+    method: 'post',
+    "headers": headers,
+    "body": body
+  })
+  console.log(reAuthResponse)
+  const reAuthData = await reAuthResponse.json();
+
+  
 }
 
 // export async function StravaRefreshToken(){
@@ -22,9 +47,9 @@ export function stravaPermission() {
 
  export async function strava() {
   // StravaRefreshToken();
-  let params = new URLSearchParams(window.location.search);
-  let code = params.get('code');
-  console.log(code);
+  // let params = new URLSearchParams(window.location.search);
+  // let code = params.get('code');
+  // console.log(code);
 
 //   const headers = {
 //     'Accept': 'application/json , text/plain , */*',

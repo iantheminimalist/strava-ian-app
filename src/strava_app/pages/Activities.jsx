@@ -4,7 +4,13 @@
 function Activities() {
   
     return (
-    <div>Activities</div>
+    <div className={`top-10`}>
+      <div className="container mx-auto">
+        Activities
+      </div>
+    
+
+    </div>
   )
 }
 
