@@ -30,7 +30,7 @@ function App() {
   }, []);
 
   let [open, openState] = useState(false);
-  console.log("This is a menu:" + open)
+  console.log("This is a menu: does this work?" + open)
   
   return (
     <div className=' bg-gradient-to-br from-orange-800 from-10% v	to-sky-950  to-90% min-h-screen w-full'>
