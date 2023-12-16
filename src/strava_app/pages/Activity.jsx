@@ -1,12 +1,12 @@
 import { useEffect } from "react"
-import { stravaActivity } from "../../APIS/strava"
+// import { stravaActivity } from "../../APIS/strava"
 
 
 function Activity() {
 
-    useEffect(() => {
-        stravaActivity();
-    })
+    // useEffect(() => {
+    //     stravaActivity();
+    // })
 
   return (
     <div className="top-20 relative">
