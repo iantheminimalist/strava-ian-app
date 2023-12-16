@@ -1,11 +1,11 @@
 import { useEffect } from "react"
-import { strava } from "../../APIS/strava"
+import { stravaActivity } from "../../APIS/strava"
 
 
 function Activity() {
 
     useEffect(() => {
-        strava();
+        stravaActivity();
     })
 
   return (
@@ -13,6 +13,14 @@ function Activity() {
     <div className="container mx-auto p-2 m-3">
       <div className="p-2 m-2">
         <h1 className="text-4xl font-bold text-center text-slate-100 h-[100px] ">My Activity</h1>
+      </div>
+
+      <div className=" border-sky-950 border-2 rounded-md  bg-white">
+        <div className=" p-2 m-2 ">
+            <div>
+              <img src="https://api.multiavatar.com/Binx Bond.svg" alt="" srcset="" />
+            </div>
+        </div>
       </div>
     </div>
 
