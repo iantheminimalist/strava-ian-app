@@ -4,7 +4,10 @@
 function About() {
   
     return (
-    <div>About Page</div>
+    <div>
+      About Page testing
+
+    </div>
   )
 }
 
