@@ -1,4 +1,4 @@
-import { useEffect } from "react"
+// import { useEffect } from "react"
 // import { stravaActivity } from "../../APIS/strava"
 
 
@@ -18,7 +18,7 @@ function Activity() {
       <div className=" border-sky-950 border-2 rounded-md  bg-white">
         <div className=" p-2 m-2 ">
             <div>
-              <img src="https://api.multiavatar.com/Binx Bond.svg" alt="" srcset="" />
+              <img src="https://api.multiavatar.com/Binx Bond.svg" alt=""  />
             </div>
         </div>
       </div>
