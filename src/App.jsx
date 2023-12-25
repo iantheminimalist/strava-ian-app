@@ -27,7 +27,7 @@ function App() {
     <div className="bg-gradient-to-br from-orange-800 from-10% v	to-sky-950  to-90% min-h-screen w-full">
       <BrowserRouter>
         <header className="  w-full fixed top-0 left-0 z-[100]">
-          <nav className=" shadow-md bg-white flex justify-between items-center p-3 border-b-2 border-gray-300 z-1">
+          <nav className=" shadow-md bg-white flex justify-between items-center p-3 border-b-2 border-gray/30">
             <div className="  ">
               <NavLink
                 to="/"
@@ -43,7 +43,7 @@ function App() {
             <div className="">
               <ul
                 className={`  md:flex md:justify-center md:items-center md:static md:auto md:z-auto 
-                            absolute w-full bg-white left-0 z-[10] transition-all duration-500 
+                            absolute w-full bg-white left-0 z-[-10] transition-all duration-500 
                             ${open ? "top-[73px]" : "top-[-490px]"}
                         `}
               >
